@@ -1,35 +1,23 @@
 {
-  "name": "dmx",
-  "version": "0.2.5",
-  "author": "Sebastian Wiedenroth <wiedi@frubar.net>",
-  "description": "A nodejs DMX library",
-  "url": "https://github.com/node-dmx/dmx",
-  "scripts": {
-    "test": "concurrently 'npm run eslint' 'npm run jest'",
-    "eslint": "node_modules/eslint/bin/eslint.js -c .eslintrc .",
-    "jest": "jest"
-  },
+  "name": "dmx2023",
+  "version": "1.0.0",
+  "author": "nospam2k <nospam2k@gmail.com>",
+  "description": "Enttek and Open DMX library",
+  "url": "https://github.com/nospam2k/dmx2023",
   "repository": {
     "type": "git",
-    "url": "https://github.com/node-dmx/dmx.git"
+    "url": "https://github.com/nospam2k/dmx2023.git"
   },
   "keywords": [
     "DMX",
     "light control"
   ],
   "dependencies": {
-    "sacn": "^3.2.1",
-    "serialport": "^8.0.5",
-    "socket.io": "^2.3.0"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "concurrently": "^4.1.0",
-    "eslint": "^5.0.1",
-    "jest": "^24.1.0"
+    "serialport": "^12.0.0",
+    "socket.io": "^4.7.2"
   },
   "license": "MIT",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=18.0.0"
   }
 }
