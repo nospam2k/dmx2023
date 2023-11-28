@@ -12,14 +12,14 @@ class DMX {
     this.animation = require('./anim');
 
     this.registerDriver('null', require('./drivers/null'));
-    this.registerDriver('socketio', require('./drivers/socketio'));
-    this.registerDriver('dmx4all', require('./drivers/dmx4all'));
+    //this.registerDriver('socketio', require('./drivers/socketio'));
+    //this.registerDriver('dmx4all', require('./drivers/dmx4all'));
     this.registerDriver('enttec-usb-dmx-pro', require('./drivers/enttec-usb-dmx-pro'));
     this.registerDriver('enttec-open-usb-dmx', require('./drivers/enttec-open-usb-dmx'));
-    this.registerDriver('dmxking-ultra-dmx-pro', require('./drivers/dmxking-ultra-dmx-pro'));
-    this.registerDriver('artnet', require('./drivers/artnet'));
-    this.registerDriver('bbdmx', require('./drivers/bbdmx'));
-    this.registerDriver('sacn', require('./drivers/sacn'));
+    //this.registerDriver('dmxking-ultra-dmx-pro', require('./drivers/dmxking-ultra-dmx-pro'));
+    //this.registerDriver('artnet', require('./drivers/artnet'));
+    //this.registerDriver('bbdmx', require('./drivers/bbdmx'));
+    //this.registerDriver('sacn', require('./drivers/sacn'));
   }
 
   registerDriver(name, module) {
