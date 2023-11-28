@@ -43,7 +43,7 @@ DMX-512 controller library for node.js
 
 ## Library API
 ```javascript
-const DMX = require('dmx')
+const DMX = require('dmx2023')
 ```
 
 ### Class DMX
