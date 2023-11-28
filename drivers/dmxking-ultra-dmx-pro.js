@@ -1,4 +1,5 @@
-const SerialPort = require('serialport');
+//const SerialPort = require('serialport');
+const SerialPort = require('serialport').SerialPort;
 const util = require('util');
 const EventEmitter = require('events').EventEmitter;
 
@@ -23,7 +24,9 @@ function DMXKingUltraDMXPro(deviceId, options = {}) {
     this.sendDMXReq = DMXKING_ULTRA_DMX_PRO_SEND_DMX_B_RQ;
   }
 
-  this.dev = new SerialPort(deviceId, {
+  //this.dev = new SerialPort(deviceId, {
+  this.dev = new SerialPort({
+    'path': deviceId,
     'baudRate': 250000,
     'dataBits': 8,
     'stopBits': 2,
