@@ -1,10 +1,44 @@
-# node-dmx
+# DMX 2023
+
+This is forked from node-dmx/dmx.
+The major changes are only loading Enttec drives and updating for serialport >12.0.0.
+I've tried to make the least amount of changes possible to maintain backwards compatibility with node-dmx/dmx.
+
+The most significant change is the line in the driver files as below:
+
+```javascript
+//const SerialPort = require('serialport');
+const SerialPort = require('serialport').SerialPort; //<- New modularized implementation
+const util = require('util');
+const EventEmitter = require('events').EventEmitter;
+
+function EnttecOpenUsbDMX(deviceId, options = {}) {
+  this.universe = Buffer.alloc(513);
+  this.readyToWrite = true;
+  this.interval = options.dmx_speed ? (1000 / options.dmx_speed) : 46;
+
+  //this.dev = new SerialPort(deviceId, { //<- New serialport rquires deviceId in 'path'
+  this.dev = new SerialPort({
+    'path': deviceId,
+    'baudRate': 250000,
+    'dataBits': 8,
+    'stopBits': 2,
+    'parity': 'none',
+  }, err => {
+    if (!err) {
+      this.start();
+    } else {
+      console.warn(err);
+    }
+  });
+}
+```
 
 DMX-512 controller library for node.js
 
 ## Install
 
-    npm install dmx
+    npm install nospam2k/dmx2023
 
 ## Library API
 ```javascript
