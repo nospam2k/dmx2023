@@ -3,6 +3,7 @@
 This is forked from node-dmx/dmx.
 The major changes are only loading Enttec drives and updating for serialport >12.0.0.
 I've tried to make the least amount of changes possible to maintain backwards compatibility with node-dmx/dmx.
+This should install with all the latest dependences.
 
 The most significant change is the line in the driver files as below:
 
