@@ -1,4 +1,4 @@
-//const SerialPort = require('serialport').SerialPort;
+//const SerialPort = require('serialport');
 const SerialPort = require('serialport').SerialPort;
 const util = require('util');
 const EventEmitter = require('events').EventEmitter;
