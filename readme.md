@@ -1,7 +1,7 @@
 # DMX 2023
 
 This is forked from node-dmx/dmx.
-The major changes are only loading Enttec drives and updating for serialport >12.0.0.
+The major changes are only loading Enttec drivers (other drivers are still in the module but are not modified. They can probably be modified as the code below.) and updating for serialport >12.0.0.
 I've tried to make the least amount of changes possible to maintain backwards compatibility with node-dmx/dmx.
 This should install with all the latest dependences.
 
