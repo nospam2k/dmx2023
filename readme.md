@@ -62,13 +62,13 @@ Register a new DMX Driver module by its name.
 These drivers are currently registered by default:
 
 - null: a development driver that prints the universe to stdout
-- socketio: a driver which sends out the universe via socket.IO as an array (see [demo_socket_client.js](./demo_socket_client.js) as a client example)
-- artnet: driver for EnttecODE
-- bbdmx: driver for [BeagleBone-DMX](https://github.com/boxysean/beaglebone-DMX)
-- dmx4all: driver for DMX4ALL devices like the "NanoDMX USB Interface"
+- ~~socketio: a driver which sends out the universe via socket.IO as an array (see [demo_socket_client.js](./demo_socket_client.js) as a client example)~~
+- ~~artnet: driver for EnttecODE~~
+- ~~bbdmx: driver for [BeagleBone-DMX](https://github.com/boxysean/beaglebone-DMX)~~
+- ~~dmx4all: driver for DMX4ALL devices like the "NanoDMX USB Interface"~~
 - enttec-usb-dmx-pro: a driver for devices using a Enttec USB DMX Pro chip like the "DMXKing ultraDMX Micro".
 - enttec-open-usb-dmx: driver for "Enttec Open DMX USB". This device is NOT recommended, there are known hardware limitations and this driver is not very stable. (If possible better obtain a device with the "pro" chip)
-- dmxking-utra-dmx-pro: driver for the DMXKing Ultra DMX pro interface. This driver support multiple universe specify the options with Port = A or B
+- ~~dmxking-utra-dmx-pro: driver for the DMXKing Ultra DMX pro interface. This driver support multiple universe specify the options with Port = A or B~~
 
 #### dmx.addUniverse(name, driver, device_id, options)
 
